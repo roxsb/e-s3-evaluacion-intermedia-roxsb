@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import PokeList from './components/PokeList';
 
-// import './App.css';
+
 
 
 const pokemon = [
@@ -18,27 +19,10 @@ const pokemon = [
 
 class App extends Component {
   render() {
-    // const {pokemon2} = this.props;
-    // const pokemonArray = pokemon.map( poke => poke)
-
+  
     return (
       <div className="App">
-          <ul className="Poke__list">
-          {pokemon.map( poke =>{
-            return(
-            <li className="Poke__item"><h2>{poke.name}</h2>
-            <img src= {poke.url}></img>
-              {poke.types.map(
-                type =>{
-                  return(
-                    <li>{poke.types}</li>
-                  )
-                }
-              )}
-            </li>
-            )
-          })}                     
-          </ul>
+       <PokeList pokemon={pokemon}/>
       </div>
     );
   }
