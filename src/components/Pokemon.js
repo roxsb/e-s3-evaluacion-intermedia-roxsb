@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Pokemon extends Component {
-  
+
   render() {
 
     const {pokemonDataArray} = this.props;
