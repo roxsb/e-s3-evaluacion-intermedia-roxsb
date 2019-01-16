@@ -17,7 +17,7 @@ class Pokemon extends Component {
                   <h2 className="poke__name">{poke.name}</h2>
                   <div className="type__list">{poke.types.map( type =>{
                     return(
-                        <li className="type__item">{poke.types}</li>
+                        <li className="type__item">{type}</li>
                     )
                   })}
                   </div>
